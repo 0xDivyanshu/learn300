@@ -138,8 +138,8 @@ DWORD WaitForSingleObject(
   DWORD  dwMilliseconds
 );
 ```
-- For conversion for unmanaged data type to managed data type this the below image
-[image](../images/unmanaged_managed.png)
+- For conversion for unmanaged data type to managed data type refer below
+![image](../images/unmamaged_managed.png)
 
 ### Reference
 
