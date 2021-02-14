@@ -107,5 +107,40 @@ namespace ConsoleApp1
 ```
 (The above code is for 32 bit. It would show overflow if ran in 64 bit since its uses UInt32)
 
+### Pre-Requistes
+
+- Below are the structures of the functions imported by kernel32.dll taken directly from Microsoft.
+
+> VirtualAlloc
+```
+LPVOID VirtualAlloc(
+  LPVOID lpAddress,
+  SIZE_T dwSize,
+  DWORD  flAllocationType,
+  DWORD  flProtect
+);
+```
+> CreateThread
+```
+HANDLE CreateThread(
+  LPSECURITY_ATTRIBUTES   lpThreadAttributes,
+  SIZE_T                  dwStackSize,
+  LPTHREAD_START_ROUTINE  lpStartAddress,
+  __drv_aliasesMem LPVOID lpParameter,
+  DWORD                   dwCreationFlags,
+  LPDWORD                 lpThreadId
+);
+```
+> WaitForSingleObject
+```
+DWORD WaitForSingleObject(
+  HANDLE hHandle,
+  DWORD  dwMilliseconds
+);
+```
+- For conversion for unmanaged data type to managed data type this the below image
+[image](images/unmanaged_managed.png)
+
 ### Reference
+
 [Ired Team](https://www.ired.team/offensive-security/defense-evasion/evading-windows-defender-using-classic-c-shellcode-launcher-with-1-byte-change)
