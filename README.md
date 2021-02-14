@@ -4,3 +4,8 @@ This repository contains all information shared publicly during my learn300 chal
 
 
 Note: This is going to be mostly reading techniques of other people and trying them myself and maybe doing some modifications. I will mostly acknowledgde the original post but let me know in case I miss any! 
+
+---
+Day | Topic
+--- | ----
+**1** | [Static shellcode analysis bypass using c#](/days/day1.md)
