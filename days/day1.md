@@ -139,7 +139,7 @@ DWORD WaitForSingleObject(
 );
 ```
 - For conversion for unmanaged data type to managed data type this the below image
-[image](images/unmanaged_managed.png)
+[image](../images/unmanaged_managed.png)
 
 ### Reference
 
