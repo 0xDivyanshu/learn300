@@ -11,3 +11,4 @@ Day | Topic
 **1** | [Static shellcode analysis bypass using c#](/days/day1.md)
 **2** | [Shellcode over TCP c#](/days/day2.md)
 **3** | [Dumping lsass.exe - Fail 1](/days/day3.md)
+**4** | [UAC bypass for lsass.exe](/days/day4.md)
