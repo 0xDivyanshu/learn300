@@ -12,3 +12,4 @@ Day | Topic
 **2** | [Shellcode over TCP c#](/days/day2.md)
 **3** | [Dumping lsass.exe - Fail 1](/days/day3.md)
 **4** | [UAC bypass for Dumping lsass.exe - Fail 2](/days/day4.md)
+**5** | [Failed IPC for elevated process](/days/day5.md)
