@@ -13,3 +13,8 @@ Day | Topic
 **3** | [Dumping lsass.exe - Fail 1](/days/day3.md)
 **4** | [UAC bypass for Dumping lsass.exe - Fail 2](/days/day4.md)
 **5** | [Failed IPC for elevated process](/days/day5.md)
+
+
+# Want to help?
+
+Feel free to suggest me some cool topics to look into or maybe help me with existing fails xD by opening a issue! 
