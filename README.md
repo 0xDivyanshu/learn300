@@ -14,6 +14,7 @@ Day | Topic
 **4** | [UAC bypass for Dumping lsass.exe - Fail 2](/days/day4.md)
 **5** | [Failed IPC for elevated process](/days/day5.md)
 **6** | [Memory Mapping for IPC](/days/day6.md)
+**7** | [Reverse shell via UAC and defender bypass](/days/day7.md)
 
 # Want to help?
 
