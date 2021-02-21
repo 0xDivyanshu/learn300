@@ -15,6 +15,7 @@ Day | Topic
 **5** | [Failed IPC for elevated process](/days/day5.md)
 **6** | [Memory Mapping for IPC](/days/day6.md)
 **7** | [Reverse shell via UAC and defender bypass](/days/day7.md)
+**8** | [Macro and Black Holes](/days/day8.md)
 
 # Want to help?
 
