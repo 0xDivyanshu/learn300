@@ -17,6 +17,7 @@ Day | Topic
 **7** | [Reverse shell via UAC and defender bypass](/days/day7.md)
 **8** | [Macro and Black Holes](/days/day8.md)
 **9** | [Theory of Process Injection](/days/day9.md)
+**10**| [Win API in VBA and powershell](/days/day10.md)
 
 # Want to help?
 
