@@ -19,6 +19,7 @@ Day | Topic
 **9** | [Theory of Process Injection](/days/day9.md)
 **10**| [Win API in VBA and powershell](/days/day10.md)
 **11**| [Macro dropper via powershell](/days/day11.md)
+**12**| [Powershell Memory query](/days/day12.md)
 # Want to help?
 
 Feel free to suggest me some cool topics to look into or maybe help me with existing fails xD by opening a issue! 
