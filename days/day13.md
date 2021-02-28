@@ -52,6 +52,10 @@ Now remember PE file stores information about exported function in `.edata` segm
 ![edata](../images/edata.png)
 
 
+So basically the base address when I load a library will the entry point to DLL.
+![kernel](../images/kernel32.png)
+
+So basically base address of `0x00007ff886500000` is going to point to start of DLL. Now, refer [this](https://tech-zealots.com/malware-analysis/pe-portable-executable-structure-malware-analysis-part-2/) to understand the structure.
 
 # Next?
 - Look into how structure of .edata and how to read the offset and iterate over the function names and other related stuff!
