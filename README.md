@@ -24,3 +24,7 @@ Day | Topic
 # Want to help?
 
 Feel free to suggest me some cool topics to look into or maybe help me with existing fails xD by opening a issue! 
+ 
+# Wanna talk?
+
+Hit me on [twitter](https://twitter.com/gh0st_R1d3r_0x9)!
