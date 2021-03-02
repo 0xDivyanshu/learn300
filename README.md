@@ -22,6 +22,7 @@ Day | Topic
 **12**| [Powershell Memory query](/days/day12.md)
 **13**| [Windows API hashing - Part 1](/days/day13.md)
 **14**| [Windows API hasing - Part 2](/days/day14.md)
+**15**| [Windows API hashing - Part 3.1](/days/day15.md)
 # Want to help?
 
 Feel free to suggest me some cool topics to look into or maybe help me with existing fails xD by opening a issue! 
