@@ -25,6 +25,7 @@ Day | Topic
 **15**| [Windows API hashing - Part 3.1](/days/day15.md)
 **16**| [Windows API Hashing - Part 3.2](/days/day16.md)
 **17**| [Windows API hashing - Part 3.3](/days/day17.md)
+**18**| [Windows API Hashing - PArt 3.4](/days/day18.md)
 
 # Want to help?
 
