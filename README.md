@@ -29,7 +29,7 @@ Day | Topic
 **19**| [Windows API dynamic address resolution, weaponised code](/days/day19.md)
 **20**| [Intro to hooked syscalls](/days/day20.md)
 **21**| [Syscalls theory](/days/day21.md)
-
+**22**| [Using syscalls directly windows](/days/day22.md)
 # Want to help?
 
 Feel free to suggest me some cool topics to look into or maybe help me with existing fails xD by opening a issue! 

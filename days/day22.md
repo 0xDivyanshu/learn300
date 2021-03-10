@@ -37,3 +37,6 @@ We save rcx into r10 and assign eax to 6 ( eax should point to syscall number i.
 Code:
 Asm file can be found [here](../code/day22.asm)
 Cpp file can be found [here](../code/day22.cpp)
+
+
+So apparantly after reading [this](https://reverseengineering.stackexchange.com/questions/19333/what-are-the-difference-syscall-and-int-0x2e-instructions) thread `int 2eH` has been replaced by `syscall` in windows 8 and above in name of Virtualization Based Security
