@@ -21,7 +21,9 @@ int main() {
 
 We set breakpoint at return 0 to read assembly instructions on address addr.
 ![image](../images/tmp2.png)
+
 This tells us the following asm code for NtReadFile
+
 ```asm
 00007FFC74A7CE40  mov         r10,rcx  
 00007FFC74A7CE43  mov         eax,6  
