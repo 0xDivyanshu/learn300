@@ -31,6 +31,7 @@ Day | Topic
 **21**| [Syscalls theory](/days/day21.md)
 **22**| [Using syscalls directly windows](/days/day22.md)
 **23**| [Various sections in PE](/days/day23.md)
+**24**| [Extracting .rdata section](/days/day24.md)
 # Want to help?
 
 Feel free to suggest me some cool topics to look into or maybe help me with existing fails xD by opening a issue! 
