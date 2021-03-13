@@ -92,13 +92,17 @@ Then K is xored with plaintext to get cipher text.
 So to identify KSA whenver you see a iteration happening and value itself is getting comapred with 256 then its KSA and once KSA is there then its RC4.
 
 Similary AES
+
 ![images](../images/tmp3.png)
 
 Similarly 3DES (Uses 3 keys)
+
 ![images](../images/tmp4.png)
 
 Serpent Encryption 
+
 ![images](../images/tmp5.png)
 
 Salsa Encprytion
+
 ![images](../images/tmp6.png)
