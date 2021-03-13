@@ -23,7 +23,7 @@ python -c 'print "\xda\xc9\xbd\x4c\xee\xdc\x9e\xd9\x74\x24\xf4\x5e\x29\xc9\xb1\x
 ```
 
 Code:
-Full code can be found [here](../days/day2.cs)
+Full code can be found [here](../code/day2.cs)
 
 ## Pre-Requisite
 - The structure of the VirtualAlloc,CreateThread and WaitForSingleObject has been explained on [day1](../days/day1.md)
