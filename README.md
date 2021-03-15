@@ -35,6 +35,8 @@ Day | Topic
 **25**| [Reading about Encrytion in malwares](/days/day25.md)
 **26**| [DLL Injection - Part 1](/days/day26.md)
 **27**| [DLL Injection- Done](/days/day27.md)
+**28**| [Reflective DLL injection - Part 1](/days/day28.md)
+
 # Want to help?
 
 Feel free to suggest me some cool topics to look into or maybe help me with existing fails xD by opening a issue! 
