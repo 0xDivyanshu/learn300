@@ -36,6 +36,7 @@ Day | Topic
 **26**| [DLL Injection - Part 1](/days/day26.md)
 **27**| [DLL Injection- Done](/days/day27.md)
 **28**| [Reflective DLL injection - Part 1](/days/day28.md)
+**29**| [Reflective DLL Injection - Part 2](/days/day29.md)
 
 # Want to help?
 
