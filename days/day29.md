@@ -10,7 +10,9 @@ The incomplete code can be found [here](../code/day29.cpp)
 My Questions!
 
 - Why are we only copying from Optional header! Why not copy the DOS and PE File headers also?
+
 => The DOS header and PE File header deal with the loading of PE i.e it tells the entry point of DLL and etc. So since we are already loading the DLL using `VirtualAlloc` there is no need to import the DOS and PE File headers. Just start from Optinal Headers.
 
 - Why are we using both Heap and VirtualAlloc to allocate memory 2 times?
+
 => According to me we are using HEAP to save the DLL so that we can access the structure of DLL to write IAT table and other import things. For instance if DLL uses `CreateThread` then we need to resolve the address from kernel32.dll dynamically and build up a IAT table. So to access sections and all other stuff we use Heap but to actually build the DLL content into memory we are using `VirtualAlloc`.
