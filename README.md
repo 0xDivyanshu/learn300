@@ -38,7 +38,7 @@ Day | Topic
 **28**| [Reflective DLL injection - Part 1](/days/day28.md)
 **29**| [Reflective DLL Injection - Part 2](/days/day29.md)
 **30**| [Reflective DLL Injection - Part 3](/days/day30.md)
-
+**31**| [Writing Bootloader - Getting into infinite boot xD](/days/day31.md)
 # Want to help?
 
 Feel free to suggest me some cool topics to look into or maybe help me with existing fails xD by opening a issue! 
