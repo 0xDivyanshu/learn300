@@ -40,6 +40,8 @@ Day | Topic
 **30**| [Reflective DLL Injection - Part 3](/days/day30.md)
 **31**| [Writing Bootloader - Getting into infinite boot xD](/days/day31.md)
 **32**| [Print all DLL used by process](/days/day32.md)
+**33**| [Understanding Power Of Frida](/days/day33.md)
+
 # Want to help?
 
 Feel free to suggest me some cool topics to look into or maybe help me with existing fails xD by opening a issue! 
