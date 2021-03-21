@@ -41,6 +41,7 @@ Day | Topic
 **31**| [Writing Bootloader - Getting into infinite boot xD](/days/day31.md)
 **32**| [Print all DLL used by process](/days/day32.md)
 **33**| [Understanding Power Of Frida](/days/day33.md)
+**34**| [Playing with frida - Notepad](/days/day34.md)
 
 # Want to help?
 
