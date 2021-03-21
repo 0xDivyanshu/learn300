@@ -34,7 +34,7 @@ This would list out all the modules loaded by the process.
 
 ## Taking a step further?
 
-Code [here](../code/day43.py) would list out all the import from the modules used by process, but it throws error saying `TransportError: Connection is closed` so its eiter a bug in frida or I need to look into my code. 
+Code [here](../code/day34.py) would list out all the import from the modules used by process, but it throws error saying `TransportError: Connection is closed` so its eiter a bug in frida or I need to look into my code. 
 
 
 # References
