@@ -43,6 +43,7 @@ Day | Topic
 **33**| [Understanding Power Of Frida](/days/day33.md)
 **34**| [Playing with frida - Notepad](/days/day34.md)
 **35**| [DNS Spy Intro](/days/day35.md)
+**36**| [Diving into Keypass using DnsSpy](/days/day36.md)
 
 # Want to help?
 
