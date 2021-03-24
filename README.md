@@ -44,6 +44,7 @@ Day | Topic
 **34**| [Playing with frida - Notepad](/days/day34.md)
 **35**| [DNS Spy Intro](/days/day35.md)
 **36**| [Diving into Keypass using DnsSpy](/days/day36.md)
+**37**| [BSOD](/days/day37.md)
 
 # Want to help?
 
