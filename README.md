@@ -45,6 +45,10 @@ Day | Topic
 **35**| [DNS Spy Intro](/days/day35.md)
 **36**| [Diving into Keypass using DnsSpy](/days/day36.md)
 **37**| [BSOD](/days/day37.md)
+**38**| [Process Hollowing - Part 1](/days/day38.md)
+**39**| [Intro to CodeQL](/days/day39.md)
+**40**| [CodeQL CTF](/days/day40.md)
+**41**| [Reflected DLL Retry 1](/days/day41.md)
 
 # Want to help?
 
