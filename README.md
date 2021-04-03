@@ -49,6 +49,8 @@ Day | Topic
 **39**| [Intro to CodeQL](/days/day39.md)
 **40**| [CodeQL CTF](/days/day40.md)
 **41**| [Reflected DLL Retry 1](/days/day41.md)
+**42**| [Process Hollowing](/days/day42.md)
+
 
 # Want to help?
 
